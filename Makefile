@@ -4,7 +4,7 @@ CFLAGS	= -Wall -Wextra -Werror
 RM	= rm -f
 AR	= ar rcs
 
-SRCS	= 
+SRCS	= ft_printf.c ft_fonc.c
 
 OBJS = $(SRCS:.c=.o)
 

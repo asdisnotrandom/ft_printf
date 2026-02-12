@@ -6,7 +6,7 @@
 /*   By: ademirel <ademirel@student.42istanbul.com.tr>+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 17:48:42 by ademirel          #+#    #+#             */
-/*   Updated: 2026/02/11 20:34:04 by ademirel         ###   ########.fr       */
+/*   Updated: 2026/02/12 23:36:59 by ademirel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 int ft_printf(const char *format, ...)
 {
-    print_char(v_arg(args, int)
+    
 }
 
