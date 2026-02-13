@@ -6,13 +6,13 @@
 /*   By: ademirel <ademirel@student.42istanbul.com.tr>+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 17:48:42 by ademirel          #+#    #+#             */
-/*   Updated: 2026/02/13 05:59:47 by ademirel         ###   ########.fr       */
+/*   Updated: 2026/02/13 09:50:06 by ademirel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_mixer(int a, va_list arg)
+static int	ft_mixer(int a, va_list arg)
 {
 	int	count;
 
