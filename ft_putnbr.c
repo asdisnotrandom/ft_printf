@@ -6,7 +6,7 @@
 /*   By: ademirel <ademirel@student.42istanbul.com.tr>+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 13:39:55 by ademirel          #+#    #+#             */
-/*   Updated: 2026/02/13 07:49:22 by ademirel         ###   ########.fr       */
+/*   Updated: 2026/02/13 08:28:06 by ademirel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	ft_putnbr(int n)
 		i += ft_putnbr(x / 10);
 		i += ft_putnbr(x % 10);
 	}
-	else if (x < 10)
+	else
 	{
-		z = (x % 10) + '0';
+		z = x + '0';
 		write(1, &z, 1);
 		i++;
 	}
@@ -53,9 +53,9 @@ int	ft_putnbr_u(unsigned int n)
 		i += ft_putnbr_u(x / 10);
 		i += ft_putnbr_u(x % 10);
 	}
-	else if (x < 10)
+	else
 	{
-		z = (x % 10) + '0';
+		z = x + '0';
 		write(1, &z, 1);
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: ademirel <ademirel@student.42istanbul.com.tr>+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 18:54:16 by ademirel          #+#    #+#             */
-/*   Updated: 2026/02/13 07:48:36 by ademirel         ###   ########.fr       */
+/*   Updated: 2026/02/13 08:22:43 by ademirel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,7 @@ int	ft_pthex_u(unsigned int a)
 		x += ft_pthex_u(a % 16);
 	}
 	else
-	{
-		x += write(1, &b[a / 16], 1);
-		x += write(1, &b[a % 16], 1);
-	}
+		x += write(1, &b[a], 1);
 	return (x);
 }
 
@@ -69,10 +66,7 @@ int	ft_pthex_l(unsigned int a)
 		x += ft_pthex_l(a % 16);
 	}
 	else
-	{
-		x += write(1, &b[a / 16], 1);
-		x += write(1, &b[a % 16], 1);
-	}
+		x += write(1, &b[a], 1);
 	return (x);
 }
 
@@ -85,13 +79,10 @@ int	ft_pthex_a(unsigned long a)
 	b = "0123456789abcdef";
 	if (a >= 16)
 	{
-		x += ft_pthex_l(a / 16);
-		x += ft_pthex_l(a % 16);
+		x += ft_pthex_a(a / 16);
+		x += ft_pthex_a(a % 16);
 	}
 	else
-	{
-		x += write(1, &b[a / 16], 1);
-		x += write(1, &b[a % 16], 1);
-	}
+		x += write(1, &b[a], 1);
 	return (x);
 }
